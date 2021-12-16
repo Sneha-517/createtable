@@ -32,8 +32,8 @@ if($result->num_rows == 1)						//check tablename exists or not
 }
 else
 {
-	$query = "CREATE TABLE $t_name (id INT(250) UNSIGNED AUTO_INCREMENT PRIMARY KEY,		//query to create table
-        firstname VARCHAR(30) NOT NULL,lastname VARCHAR(30) NOT NULL,email VARCHAR(50))";         //create table with given parameters
+	$query = "CREATE TABLE $t_name (id INT(250) UNSIGNED AUTO_INCREMENT PRIMARY KEY,		
+        firstname VARCHAR(30) NOT NULL,lastname VARCHAR(30) NOT NULL,email VARCHAR(50))";         //query to create table with given parameters
 	$res = mysqli_query($n,$query);					//excute query			
 	echo '<script language = "javascript">';
 	echo 'alert("Table Successfully Created")';
